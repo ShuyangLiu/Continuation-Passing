@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b0b58f6-e44e-4cc7-8694-d2cea6d0b65c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/binary_tree.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/binary_tree.rb" afterPath="$PROJECT_DIR$/binary_tree.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/continuation_passing.rb" afterPath="$PROJECT_DIR$/continuation_passing.rb" />
     </list>
     <ignored path="Continuation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +20,7 @@
     <SUITE FILE_PATH="coverage/Continuation@simple_enum.coverage" NAME="simple_enum Coverage Results" MODIFIED="1478744671012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Continuation" />
     <SUITE FILE_PATH="coverage/Continuation@playing_callcc.coverage" NAME="playing_callcc Coverage Results" MODIFIED="1478664034176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Continuation" />
     <SUITE FILE_PATH="coverage/Continuation@integer.coverage" NAME="integer Coverage Results" MODIFIED="1478746949987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Continuation" />
-    <SUITE FILE_PATH="coverage/Continuation@continuation_passing.coverage" NAME="continuation_passing Coverage Results" MODIFIED="1478752560225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Continuation" />
+    <SUITE FILE_PATH="coverage/Continuation@continuation_passing.coverage" NAME="continuation_passing Coverage Results" MODIFIED="1478797789334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Continuation" />
     <SUITE FILE_PATH="coverage/Continuation@binary_tree.coverage" NAME="binary_tree Coverage Results" MODIFIED="1478796166183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Continuation" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -42,21 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="continuation_passing.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="continuation_passing.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/continuation_passing.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+            <state relative-caret-position="-450">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="binary_tree.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="binary_tree.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/binary_tree.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="214">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -90,8 +90,8 @@
         <option value="$PROJECT_DIR$/playing_callcc.rb" />
         <option value="$PROJECT_DIR$/simple_enum.rb" />
         <option value="$PROJECT_DIR$/integer.rb" />
-        <option value="$PROJECT_DIR$/continuation_passing.rb" />
         <option value="$PROJECT_DIR$/binary_tree.rb" />
+        <option value="$PROJECT_DIR$/continuation_passing.rb" />
       </list>
     </option>
   </component>
@@ -133,24 +133,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Continuation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Continuation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Continuation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
@@ -162,7 +145,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Ruby.binary_tree">
+  <component name="RunManager" selected="Ruby.continuation_passing">
     <configuration default="false" name="playing_callcc" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="Continuation" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -397,8 +380,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.binary_tree" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.continuation_passing" />
+        <item index="0" class="java.lang.String" itemvalue="Ruby.continuation_passing" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.binary_tree" />
         <item index="2" class="java.lang.String" itemvalue="Ruby.integer" />
         <item index="3" class="java.lang.String" itemvalue="Ruby.simple_enum" />
         <item index="4" class="java.lang.String" itemvalue="Ruby.playing_callcc" />
@@ -422,18 +405,26 @@
       <workItem from="1478656678032" duration="1469000" />
       <workItem from="1478658224094" duration="10518000" />
       <workItem from="1478712211411" duration="21733000" />
-      <workItem from="1478794943110" duration="1301000" />
+      <workItem from="1478794943110" duration="2982000" />
     </task>
+    <task id="LOCAL-00001" summary="add simple binary tree structure">
+      <created>1478796267139</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1478796267139</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35068000" />
+    <option name="totallyTimeSpent" value="36749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="24" width="1315" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24901497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20488574" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -462,6 +453,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add simple binary tree structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="add simple binary tree structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -535,18 +530,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/continuation_passing.rb">
+    <entry file="file://$PROJECT_DIR$/binary_tree.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+        <state relative-caret-position="214">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/binary_tree.rb">
+    <entry file="file://$PROJECT_DIR$/continuation_passing.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="-450">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -15,7 +15,7 @@ class Node
   end
 end
 
-class BinaryTree
+class MyBinaryTree
   attr_accessor :root
   def initialize
     @root = nil

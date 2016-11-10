@@ -1,4 +1,5 @@
 require_relative 'simple_enum.rb'
+require_relative 'binary_tree'
 ##########################
 # CSC 253 Assignment 6
 # Shuyang Liu
@@ -33,7 +34,20 @@ def helper (n, cc, res)
 end
 
 # - Part B -
+# a simple recursive function counting the number of nodes in a binary tree
+def total_node_number(tree)
+  if tree.root == nil
+    0
+  else
+    left_tree = MyBinaryTree.new
+    left_tree.root = tree.root.left_child
+    right_tree = MyBinaryTree.new
+    right_tree.root = tree.root.right_child
+    1+total_node_number(left_tree)+total_node_number(right_tree)
+  end
+end
 
+# a tail-recursive function using callcc counting the number of nodes in a binary tree
 
 
 
@@ -47,6 +61,19 @@ def test_factorial
 end
 
 test_factorial
+
+# - Part B -
+def test_total_node_number
+  b = MyBinaryTree.new
+  100.times do |i|
+    b.add_node(i)
+  end
+  raise "#{__method__} error" if total_node_number(b) != 100
+  puts "#{__method__} passed"
+end
+
+test_total_node_number
+
 
 
 
