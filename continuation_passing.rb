@@ -1,4 +1,4 @@
-require_relative 'simple_enum.rb'
+require 'continuation'
 require_relative 'binary_tree'
 ##########################
 # CSC 253 Assignment 6
@@ -10,16 +10,16 @@ require_relative 'binary_tree'
 # - Part A -
 
 # a simple recursive factorial function
-def simple_factorial(num)
+def factorial(num)
   if num == 1
     1
   else
-    num * simple_factorial(num - 1)
+    num * factorial(num - 1)
   end
 end
 
 # a tail-recursive version of factorial function passing a continuation as parameter
-def tail_recursive_factorial(n)
+def factorial_cps(n)
     callcc{ |c|
       helper(n,c,1)
     }
@@ -33,7 +33,9 @@ def helper (n, cc, res)
   end
 end
 
+##########################
 # - Part B -
+
 # a simple recursive function counting the number of nodes in a binary tree
 def total_node_number(tree)
   if tree.root == nil
@@ -48,15 +50,38 @@ def total_node_number(tree)
 end
 
 # a tail-recursive function using callcc counting the number of nodes in a binary tree
+def total_node_number_cps(tree)
+  callcc{|cc|
+    helper_2(tree.root, cc, 0)
+  }
+end
 
-
+def helper_2(node, cc, count)
+  if node == nil
+    cc.call(count)
+  else
+    if node.left_child == nil
+      if node.right_child == nil
+        cc.call(count+1) # left == nil, right == nil
+      else
+        helper_2(node.right_child,cc,count+1)# left == nil, right != nil
+      end
+    else
+      if node.right_child == nil
+        helper_2(node.left_child,cc,count+1)# left != nil, right == nil
+      else
+        helper_2(node.right_child,cc,callcc{|k| helper_2(node.left_child,k,count+1)})# left != nil, right != nil
+      end
+    end
+  end
+end
 
 ##########################
 # TESTS
 ##########################
 # - Part A -
 def test_factorial
-  raise "#{__method__} error" if (simple_factorial(10) != tail_recursive_factorial(10))
+  raise "#{__method__} error" if (factorial(10) != factorial_cps(10))
   puts "#{__method__} passed"
 end
 
@@ -68,7 +93,8 @@ def test_total_node_number
   100.times do |i|
     b.add_node(i)
   end
-  raise "#{__method__} error" if total_node_number(b) != 100
+  raise "#{__method__} error" if ((total_node_number(b) != total_node_number_cps(b)) ||
+                                  (total_node_number(b) != 100))
   puts "#{__method__} passed"
 end
 
